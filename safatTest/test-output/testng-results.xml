@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-08T22:48:18 IST" name="Suite" finished-at="2022-05-08T22:49:28 IST" duration-ms="70630">
+    <groups>
+    </groups>
+    <test started-at="2022-05-08T22:48:18 IST" name="End to End Test" finished-at="2022-05-08T22:49:28 IST" duration-ms="70630">
+      <class name="Testcases.SimpleEndToEndTest">
+        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:47:58 IST" name="launchTheBrowser" finished-at="2022-05-08T22:48:18 IST" duration-ms="20163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchTheBrowser -->
+        <test-method signature="LoginTheCustomer()[pri:1, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:48:18 IST" name="LoginTheCustomer" finished-at="2022-05-08T22:48:25 IST" duration-ms="6757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTheCustomer -->
+        <test-method is-config="true" signature="afterClass(org.testng.ITestResult)[pri:0, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:48:25 IST" name="afterClass" finished-at="2022-05-08T22:48:25 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginTheCustomer status=SUCCESS method=SimpleEndToEndTest.LoginTheCustomer()[pri:1, instance:Testcases.SimpleEndToEndTest@771a660] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method signature="AddTheProductForCheckout()[pri:2, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:48:25 IST" name="AddTheProductForCheckout" finished-at="2022-05-08T22:48:33 IST" depends-on-methods="Testcases.SimpleEndToEndTest.LoginTheCustomer" duration-ms="7906" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddTheProductForCheckout -->
+        <test-method is-config="true" signature="afterClass(org.testng.ITestResult)[pri:0, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:48:33 IST" name="afterClass" finished-at="2022-05-08T22:48:33 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddTheProductForCheckout status=SUCCESS method=SimpleEndToEndTest.AddTheProductForCheckout()[pri:2, instance:Testcases.SimpleEndToEndTest@771a660] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method signature="MovetoCheckoutAndConfirmTheShippingAndBillingAddress()[pri:3, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:48:33 IST" name="MovetoCheckoutAndConfirmTheShippingAndBillingAddress" finished-at="2022-05-08T22:48:41 IST" depends-on-methods="Testcases.SimpleEndToEndTest.AddTheProductForCheckout" duration-ms="8925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MovetoCheckoutAndConfirmTheShippingAndBillingAddress -->
+        <test-method is-config="true" signature="afterClass(org.testng.ITestResult)[pri:0, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:48:41 IST" name="afterClass" finished-at="2022-05-08T22:48:42 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MovetoCheckoutAndConfirmTheShippingAndBillingAddress status=SUCCESS method=SimpleEndToEndTest.MovetoCheckoutAndConfirmTheShippingAndBillingAddress()[pri:3, instance:Testcases.SimpleEndToEndTest@771a660] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method signature="SelectDeliveryOption()[pri:4, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:48:42 IST" name="SelectDeliveryOption" finished-at="2022-05-08T22:48:47 IST" depends-on-methods="Testcases.SimpleEndToEndTest.MovetoCheckoutAndConfirmTheShippingAndBillingAddress" duration-ms="5581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectDeliveryOption -->
+        <test-method is-config="true" signature="afterClass(org.testng.ITestResult)[pri:0, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:48:47 IST" name="afterClass" finished-at="2022-05-08T22:48:47 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SelectDeliveryOption status=SUCCESS method=SimpleEndToEndTest.SelectDeliveryOption()[pri:4, instance:Testcases.SimpleEndToEndTest@771a660] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method signature="SelectKNET()[pri:5, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:48:47 IST" name="SelectKNET" finished-at="2022-05-08T22:48:57 IST" depends-on-methods="Testcases.SimpleEndToEndTest.SelectDeliveryOption" duration-ms="10385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectKNET -->
+        <test-method is-config="true" signature="afterClass(org.testng.ITestResult)[pri:0, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:48:57 IST" name="afterClass" finished-at="2022-05-08T22:48:57 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SelectKNET status=SUCCESS method=SimpleEndToEndTest.SelectKNET()[pri:5, instance:Testcases.SimpleEndToEndTest@771a660] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method signature="EnterKNETCardDetailsAndSubmit()[pri:6, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:48:57 IST" name="EnterKNETCardDetailsAndSubmit" finished-at="2022-05-08T22:49:26 IST" depends-on-methods="Testcases.SimpleEndToEndTest.SelectKNET" duration-ms="28246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnterKNETCardDetailsAndSubmit -->
+        <test-method is-config="true" signature="afterClass(org.testng.ITestResult)[pri:0, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:49:26 IST" name="afterClass" finished-at="2022-05-08T22:49:26 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EnterKNETCardDetailsAndSubmit status=SUCCESS method=SimpleEndToEndTest.EnterKNETCardDetailsAndSubmit()[pri:6, instance:Testcases.SimpleEndToEndTest@771a660] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method signature="VerifyTheOrderOnMyAccount()[pri:7, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:49:26 IST" name="VerifyTheOrderOnMyAccount" finished-at="2022-05-08T22:49:28 IST" depends-on-methods="Testcases.SimpleEndToEndTest.EnterKNETCardDetailsAndSubmit" duration-ms="2774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyTheOrderOnMyAccount -->
+        <test-method is-config="true" signature="afterClass(org.testng.ITestResult)[pri:0, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:49:28 IST" name="afterClass" finished-at="2022-05-08T22:49:28 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyTheOrderOnMyAccount status=SUCCESS method=SimpleEndToEndTest.VerifyTheOrderOnMyAccount()[pri:7, instance:Testcases.SimpleEndToEndTest@771a660] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:49:29 IST" name="tearDown" finished-at="2022-05-08T22:49:29 IST" duration-ms="397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Testcases.SimpleEndToEndTest -->
+    </test> <!-- End to End Test -->
+  </suite> <!-- Suite -->
+</testng-results>
