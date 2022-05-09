@@ -45,6 +45,7 @@ public class SimpleEndToEndTest extends Base {
 	public void EnterKNETCardDetailsAndSubmit() {
 
 		CheckoutLibrary.moveToKNETAndCompleteThePayment(driver, bank, cardNumber, expiryMonth, expiryYear, pin);
+		System.out.println("This is KNET");
 
 	}
 
