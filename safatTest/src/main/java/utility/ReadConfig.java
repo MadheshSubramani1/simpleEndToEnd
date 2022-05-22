@@ -89,14 +89,12 @@ public class ReadConfig {
 	public String getPIN() {
 
 		String pin = properties.getProperty("PIN");
-		System.out.println("PIN is "+pin);
 		return pin;
 	}
 	
 	public String getBrowserFromPOM() {
 		
 		String browser=System.getProperty("browserName");
-		System.out.println("browser is "+browser);
 		return browser;
 	}
 	
