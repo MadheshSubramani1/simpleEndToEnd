@@ -1,12 +1,14 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>Com.safat</groupId>
-  <artifactId>safatTest</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>safat</name>
-  <description>safatTesting</description>
-  
-  <properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>Com.safat</groupId>
+	<artifactId>safatTest</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>safat</name>
+	<description>safatTesting</description>
+
+	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
@@ -19,6 +21,14 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M4</version>
 				<configuration>
+
+					<systemPropertyVariables>
+
+						<browserName>${DbrowserName}</browserName>
+						<userName>${DuserName}</userName>
+						<password>${Dpassword}</password>
+
+					</systemPropertyVariables>
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
@@ -41,7 +51,7 @@
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
 			<version>5.1.1</version>
-			
+
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->

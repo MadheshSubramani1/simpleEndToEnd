@@ -1,4 +1,4 @@
-package utility;
+	package utility;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -25,9 +25,10 @@ public class ExtentReportUtility {
 
 	public static void ExtentReportConfiguration() {
 		
-		String time = new SimpleDateFormat("yyyy_MM_dd__HH_mm_ss").format(new Date());
+		//String time = new SimpleDateFormat("yyyy_MM_dd__HH_mm_ss").format(new Date());
 
-		extentSpark = new ExtentSparkReporter("./Report/SparkReport"+time+".html");
+		//extentSpark = new ExtentSparkReporter("./Report/SparkReport"+time+".html");
+		extentSpark = new ExtentSparkReporter("./Report/SparkReport.html");
 		extentSpark.config().setDocumentTitle("X-Cite Automation Report");
 		extentSpark.config().setReportName("Functional Test Report");
 		extentSpark.config().setTheme(Theme.DARK);

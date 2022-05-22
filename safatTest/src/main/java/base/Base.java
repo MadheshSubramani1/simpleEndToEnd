@@ -13,7 +13,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 
 import org.testng.annotations.BeforeSuite;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utility.BrowserOptions;
 import utility.ExtentReportUtility;
@@ -24,10 +23,10 @@ public class Base {
 	public static WebDriver driver;
 
 	ReadConfig config = new ReadConfig();
-	String browser = config.getBrowser();
+	String browser = config.getBrowserFromPOM();
 	String url = config.getURL();
-	public String username = config.getUserName();
-	public String password = config.getPassword();
+	public String username = config.getUserNameFromPOM();
+	public String password = config.getPasswordFromPOM();
 	public String location = config.getLocation();
 	public String buildingNumber = config.getBuildingNumber();
 	public String primaryMobileNumber = config.getPrimaryMoileNumber();
@@ -37,7 +36,7 @@ public class Base {
 	public String expiryYear = config.getExpiryYear();
 	public String pin = config.getPIN();
 
-	@BeforeSuite
+	@BeforeSuite()
 	public void launchTheBrowser() throws IOException {
 
 		BrowserOptions browserOptions = new BrowserOptions();
@@ -83,7 +82,7 @@ public class Base {
 
 		ExtentReportUtility.extent.flush();
 		if (browser != null) {
-			// driver.quit();
+			 driver.quit();
 		}
 
 	}

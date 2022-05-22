@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\Eclipse_WorkSpace\safatTest\testng.xml</span>
+                    <span>C:\Users\emb-madhsub\git\simpleEndToEnd\safatTest\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,51 +93,51 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">7 methods,  7 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Testcases.SimpleEndToEndTest" class="method navigator-link" hash-for-method="AddTheProductForCheckout">AddTheProductForCheckout</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Testcases.SimpleEndToEndTest" class="method navigator-link" hash-for-method="EnterKNETCardDetailsAndSubmit">EnterKNETCardDetailsAndSubmit</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Testcases.SimpleEndToEndTest" class="method navigator-link" hash-for-method="LoginTheCustomer">LoginTheCustomer</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Testcases.SimpleEndToEndTest" class="method navigator-link" hash-for-method="MovetoCheckoutAndConfirmTheShippingAndBillingAddress">MovetoCheckoutAndConfirmTheShippingAndBillingAddress</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Testcases.SimpleEndToEndTest" class="method navigator-link" hash-for-method="SelectDeliveryOption">SelectDeliveryOption</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Testcases.SimpleEndToEndTest" class="method navigator-link" hash-for-method="SelectKNET">SelectKNET</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Testcases.SimpleEndToEndTest" class="method navigator-link" hash-for-method="VerifyTheOrderOnMyAccount">VerifyTheOrderOnMyAccount</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -149,9 +149,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">Testcases.SimpleEndToEndTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -160,6 +160,10 @@
                   <a name="AddTheProductForCheckout">
                   </a> <!-- AddTheProductForCheckout -->
                   <span class="method-name">AddTheProductForCheckout</span>
+                  <div class="stack-trace">java.lang.Throwable: Method SimpleEndToEndTest.AddTheProductForCheckout()[pri:2, instance:Testcases.SimpleEndToEndTest@771a660] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -167,6 +171,10 @@
                   <a name="EnterKNETCardDetailsAndSubmit">
                   </a> <!-- EnterKNETCardDetailsAndSubmit -->
                   <span class="method-name">EnterKNETCardDetailsAndSubmit</span>
+                  <div class="stack-trace">java.lang.Throwable: Method SimpleEndToEndTest.EnterKNETCardDetailsAndSubmit()[pri:6, instance:Testcases.SimpleEndToEndTest@771a660] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -174,6 +182,10 @@
                   <a name="LoginTheCustomer">
                   </a> <!-- LoginTheCustomer -->
                   <span class="method-name">LoginTheCustomer</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;this.browser&quot; is null
+	at base.Base.launchTheBrowser(Base.java:44)
+... Removed 19 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -181,6 +193,10 @@
                   <a name="MovetoCheckoutAndConfirmTheShippingAndBillingAddress">
                   </a> <!-- MovetoCheckoutAndConfirmTheShippingAndBillingAddress -->
                   <span class="method-name">MovetoCheckoutAndConfirmTheShippingAndBillingAddress</span>
+                  <div class="stack-trace">java.lang.Throwable: Method SimpleEndToEndTest.MovetoCheckoutAndConfirmTheShippingAndBillingAddress()[pri:3, instance:Testcases.SimpleEndToEndTest@771a660] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -188,6 +204,10 @@
                   <a name="SelectDeliveryOption">
                   </a> <!-- SelectDeliveryOption -->
                   <span class="method-name">SelectDeliveryOption</span>
+                  <div class="stack-trace">java.lang.Throwable: Method SimpleEndToEndTest.SelectDeliveryOption()[pri:4, instance:Testcases.SimpleEndToEndTest@771a660] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -195,6 +215,10 @@
                   <a name="SelectKNET">
                   </a> <!-- SelectKNET -->
                   <span class="method-name">SelectKNET</span>
+                  <div class="stack-trace">java.lang.Throwable: Method SimpleEndToEndTest.SelectKNET()[pri:5, instance:Testcases.SimpleEndToEndTest@771a660] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -202,25 +226,29 @@
                   <a name="VerifyTheOrderOnMyAccount">
                   </a> <!-- VerifyTheOrderOnMyAccount -->
                   <span class="method-name">VerifyTheOrderOnMyAccount</span>
+                  <div class="stack-trace">java.lang.Throwable: Method SimpleEndToEndTest.VerifyTheOrderOnMyAccount()[pri:7, instance:Testcases.SimpleEndToEndTest@771a660] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Eclipse_WorkSpace\safatTest\testng.xml</span>
+            <span class="header-content">C:\Users\emb-madhsub\git\simpleEndToEnd\safatTest\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;End to End Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Testcases.SimpleEndToEndTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- End to End Test --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -232,7 +260,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">End to End Test (1 class)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -260,38 +288,38 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'EnterKNETCardDetailsAndSubmit')
+data.setCell(0, 1, 'VerifyTheOrderOnMyAccount')
 data.setCell(0, 2, 'Testcases.SimpleEndToEndTest')
-data.setCell(0, 3, 28246);
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'SelectKNET')
+data.setCell(1, 1, 'SelectDeliveryOption')
 data.setCell(1, 2, 'Testcases.SimpleEndToEndTest')
-data.setCell(1, 3, 10385);
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'MovetoCheckoutAndConfirmTheShippingAndBillingAddress')
 data.setCell(2, 2, 'Testcases.SimpleEndToEndTest')
-data.setCell(2, 3, 8925);
+data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'AddTheProductForCheckout')
+data.setCell(3, 1, 'SelectKNET')
 data.setCell(3, 2, 'Testcases.SimpleEndToEndTest')
-data.setCell(3, 3, 7906);
+data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'LoginTheCustomer')
+data.setCell(4, 1, 'EnterKNETCardDetailsAndSubmit')
 data.setCell(4, 2, 'Testcases.SimpleEndToEndTest')
-data.setCell(4, 3, 6757);
+data.setCell(4, 3, 0);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'SelectDeliveryOption')
+data.setCell(5, 1, 'LoginTheCustomer')
 data.setCell(5, 2, 'Testcases.SimpleEndToEndTest')
-data.setCell(5, 3, 5581);
+data.setCell(5, 3, 0);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'VerifyTheOrderOnMyAccount')
+data.setCell(6, 1, 'AddTheProductForCheckout')
 data.setCell(6, 2, 'Testcases.SimpleEndToEndTest')
-data.setCell(6, 3, 2774);
+data.setCell(6, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -319,68 +347,46 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">Testcases.SimpleEndToEndTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">launchTheBrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">LoginTheCustomer</span>
-                <span class="method-start">20198 ms</span>
+                <span class="method-start">35 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterClass([TestResult name=LoginTheCustomer status=SUCCESS method=SimpleEndToEndTest.LoginTheCustomer()[pri:1,...)</span>
-                <span class="method-start">26958 ms</span>
+                <span class="method-name">afterClass</span>
+                <span class="method-start">38 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">AddTheProductForCheckout</span>
-                <span class="method-start">26965 ms</span>
+                <span class="method-start">42 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterClass([TestResult name=AddTheProductForCheckout status=SUCCESS method=SimpleEndToEndTest.AddTheProductForC...)</span>
-                <span class="method-start">34873 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">MovetoCheckoutAndConfirmTheShippingAndBillingAddress</span>
-                <span class="method-start">34873 ms</span>
+                <span class="method-start">44 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterClass([TestResult name=MovetoCheckoutAndConfirmTheShippingAndBillingAddress status=SUCCESS method=SimpleEn...)</span>
-                <span class="method-start">43799 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">SelectDeliveryOption</span>
-                <span class="method-start">43800 ms</span>
+                <span class="method-start">47 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterClass([TestResult name=SelectDeliveryOption status=SUCCESS method=SimpleEndToEndTest.SelectDeliveryOption(...)</span>
-                <span class="method-start">49382 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">SelectKNET</span>
-                <span class="method-start">49383 ms</span>
+                <span class="method-start">49 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterClass([TestResult name=SelectKNET status=SUCCESS method=SimpleEndToEndTest.SelectKNET()[pri:5, instance:Te...)</span>
-                <span class="method-start">59769 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">EnterKNETCardDetailsAndSubmit</span>
-                <span class="method-start">59770 ms</span>
+                <span class="method-start">51 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterClass([TestResult name=EnterKNETCardDetailsAndSubmit status=SUCCESS method=SimpleEndToEndTest.EnterKNETCar...)</span>
-                <span class="method-start">88016 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">VerifyTheOrderOnMyAccount</span>
-                <span class="method-start">88017 ms</span>
+                <span class="method-start">54 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterClass([TestResult name=VerifyTheOrderOnMyAccount status=SUCCESS method=SimpleEndToEndTest.VerifyTheOrderOn...)</span>
-                <span class="method-start">90792 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">90806 ms</span>
+                <span class="method-start">113 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -34,8 +34,8 @@ public class ReadConfig {
 
 	public String getUserName() {
 
-		String username = properties.getProperty("UserName");
-		return username;
+		String userName = properties.getProperty("UserName");
+		return userName;
 	}
 
 	public String getPassword() {
@@ -89,6 +89,26 @@ public class ReadConfig {
 	public String getPIN() {
 
 		String pin = properties.getProperty("PIN");
+		System.out.println("PIN is "+pin);
 		return pin;
+	}
+	
+	public String getBrowserFromPOM() {
+		
+		String browser=System.getProperty("browserName");
+		System.out.println("browser is "+browser);
+		return browser;
+	}
+	
+	public String getUserNameFromPOM() {
+		
+		String userName=System.getProperty("userName");
+		return userName;
+	}
+	
+	public String getPasswordFromPOM() {
+		
+		String password=System.getProperty("password");
+		return password;
 	}
 }

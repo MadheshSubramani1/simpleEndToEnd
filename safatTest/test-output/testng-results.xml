@@ -1,126 +1,279 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="0" failed="0" skipped="7">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-08T22:48:18 IST" name="Suite" finished-at="2022-05-08T22:49:28 IST" duration-ms="70630">
+  <suite started-at="2022-05-20T14:54:16 IST" name="Suite" finished-at="2022-05-20T14:54:16 IST" duration-ms="43">
     <groups>
     </groups>
-    <test started-at="2022-05-08T22:48:18 IST" name="End to End Test" finished-at="2022-05-08T22:49:28 IST" duration-ms="70630">
+    <test started-at="2022-05-20T14:54:16 IST" name="Test" finished-at="2022-05-20T14:54:16 IST" duration-ms="43">
       <class name="Testcases.SimpleEndToEndTest">
-        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:47:58 IST" name="launchTheBrowser" finished-at="2022-05-08T22:48:18 IST" duration-ms="20163" status="PASS">
+        <test-method is-config="true" signature="launchTheBrowser()[pri:0, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-20T14:54:16 IST" name="launchTheBrowser" finished-at="2022-05-20T14:54:16 IST" duration-ms="6" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.equalsIgnoreCase(String)" because "this.browser" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because "this.browser" is null
+at base.Base.launchTheBrowser(Base.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:317)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchTheBrowser -->
-        <test-method signature="LoginTheCustomer()[pri:1, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:48:18 IST" name="LoginTheCustomer" finished-at="2022-05-08T22:48:25 IST" duration-ms="6757" status="PASS">
+        <test-method signature="LoginTheCustomer()[pri:1, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-20T14:54:16 IST" name="LoginTheCustomer" finished-at="2022-05-20T14:54:16 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.equalsIgnoreCase(String)" because "this.browser" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because "this.browser" is null
+at base.Base.launchTheBrowser(Base.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:317)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTheCustomer -->
-        <test-method is-config="true" signature="afterClass(org.testng.ITestResult)[pri:0, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:48:25 IST" name="afterClass" finished-at="2022-05-08T22:48:25 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LoginTheCustomer status=SUCCESS method=SimpleEndToEndTest.LoginTheCustomer()[pri:1, instance:Testcases.SimpleEndToEndTest@771a660] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="afterClass(org.testng.ITestResult)[pri:0, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-20T14:54:16 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1653038656355" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method signature="AddTheProductForCheckout()[pri:2, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:48:25 IST" name="AddTheProductForCheckout" finished-at="2022-05-08T22:48:33 IST" depends-on-methods="Testcases.SimpleEndToEndTest.LoginTheCustomer" duration-ms="7906" status="PASS">
+        <test-method signature="AddTheProductForCheckout()[pri:2, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-20T14:54:16 IST" name="AddTheProductForCheckout" finished-at="2022-05-20T14:54:16 IST" depends-on-methods="Testcases.SimpleEndToEndTest.LoginTheCustomer" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method SimpleEndToEndTest.AddTheProductForCheckout()[pri:2, instance:Testcases.SimpleEndToEndTest@771a660] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method SimpleEndToEndTest.AddTheProductForCheckout()[pri:2, instance:Testcases.SimpleEndToEndTest@771a660] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddTheProductForCheckout -->
-        <test-method is-config="true" signature="afterClass(org.testng.ITestResult)[pri:0, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:48:33 IST" name="afterClass" finished-at="2022-05-08T22:48:33 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=AddTheProductForCheckout status=SUCCESS method=SimpleEndToEndTest.AddTheProductForCheckout()[pri:2, instance:Testcases.SimpleEndToEndTest@771a660] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method signature="MovetoCheckoutAndConfirmTheShippingAndBillingAddress()[pri:3, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:48:33 IST" name="MovetoCheckoutAndConfirmTheShippingAndBillingAddress" finished-at="2022-05-08T22:48:41 IST" depends-on-methods="Testcases.SimpleEndToEndTest.AddTheProductForCheckout" duration-ms="8925" status="PASS">
+        <test-method signature="MovetoCheckoutAndConfirmTheShippingAndBillingAddress()[pri:3, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-20T14:54:16 IST" name="MovetoCheckoutAndConfirmTheShippingAndBillingAddress" finished-at="2022-05-20T14:54:16 IST" depends-on-methods="Testcases.SimpleEndToEndTest.AddTheProductForCheckout" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method SimpleEndToEndTest.MovetoCheckoutAndConfirmTheShippingAndBillingAddress()[pri:3, instance:Testcases.SimpleEndToEndTest@771a660] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method SimpleEndToEndTest.MovetoCheckoutAndConfirmTheShippingAndBillingAddress()[pri:3, instance:Testcases.SimpleEndToEndTest@771a660] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MovetoCheckoutAndConfirmTheShippingAndBillingAddress -->
-        <test-method is-config="true" signature="afterClass(org.testng.ITestResult)[pri:0, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:48:41 IST" name="afterClass" finished-at="2022-05-08T22:48:42 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=MovetoCheckoutAndConfirmTheShippingAndBillingAddress status=SUCCESS method=SimpleEndToEndTest.MovetoCheckoutAndConfirmTheShippingAndBillingAddress()[pri:3, instance:Testcases.SimpleEndToEndTest@771a660] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method signature="SelectDeliveryOption()[pri:4, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:48:42 IST" name="SelectDeliveryOption" finished-at="2022-05-08T22:48:47 IST" depends-on-methods="Testcases.SimpleEndToEndTest.MovetoCheckoutAndConfirmTheShippingAndBillingAddress" duration-ms="5581" status="PASS">
+        <test-method signature="SelectDeliveryOption()[pri:4, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-20T14:54:16 IST" name="SelectDeliveryOption" finished-at="2022-05-20T14:54:16 IST" depends-on-methods="Testcases.SimpleEndToEndTest.MovetoCheckoutAndConfirmTheShippingAndBillingAddress" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method SimpleEndToEndTest.SelectDeliveryOption()[pri:4, instance:Testcases.SimpleEndToEndTest@771a660] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method SimpleEndToEndTest.SelectDeliveryOption()[pri:4, instance:Testcases.SimpleEndToEndTest@771a660] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SelectDeliveryOption -->
-        <test-method is-config="true" signature="afterClass(org.testng.ITestResult)[pri:0, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:48:47 IST" name="afterClass" finished-at="2022-05-08T22:48:47 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SelectDeliveryOption status=SUCCESS method=SimpleEndToEndTest.SelectDeliveryOption()[pri:4, instance:Testcases.SimpleEndToEndTest@771a660] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method signature="SelectKNET()[pri:5, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:48:47 IST" name="SelectKNET" finished-at="2022-05-08T22:48:57 IST" depends-on-methods="Testcases.SimpleEndToEndTest.SelectDeliveryOption" duration-ms="10385" status="PASS">
+        <test-method signature="SelectKNET()[pri:5, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-20T14:54:16 IST" name="SelectKNET" finished-at="2022-05-20T14:54:16 IST" depends-on-methods="Testcases.SimpleEndToEndTest.SelectDeliveryOption" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method SimpleEndToEndTest.SelectKNET()[pri:5, instance:Testcases.SimpleEndToEndTest@771a660] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method SimpleEndToEndTest.SelectKNET()[pri:5, instance:Testcases.SimpleEndToEndTest@771a660] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SelectKNET -->
-        <test-method is-config="true" signature="afterClass(org.testng.ITestResult)[pri:0, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:48:57 IST" name="afterClass" finished-at="2022-05-08T22:48:57 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=SelectKNET status=SUCCESS method=SimpleEndToEndTest.SelectKNET()[pri:5, instance:Testcases.SimpleEndToEndTest@771a660] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method signature="EnterKNETCardDetailsAndSubmit()[pri:6, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:48:57 IST" name="EnterKNETCardDetailsAndSubmit" finished-at="2022-05-08T22:49:26 IST" depends-on-methods="Testcases.SimpleEndToEndTest.SelectKNET" duration-ms="28246" status="PASS">
+        <test-method signature="EnterKNETCardDetailsAndSubmit()[pri:6, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-20T14:54:16 IST" name="EnterKNETCardDetailsAndSubmit" finished-at="2022-05-20T14:54:16 IST" depends-on-methods="Testcases.SimpleEndToEndTest.SelectKNET" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method SimpleEndToEndTest.EnterKNETCardDetailsAndSubmit()[pri:6, instance:Testcases.SimpleEndToEndTest@771a660] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method SimpleEndToEndTest.EnterKNETCardDetailsAndSubmit()[pri:6, instance:Testcases.SimpleEndToEndTest@771a660] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnterKNETCardDetailsAndSubmit -->
-        <test-method is-config="true" signature="afterClass(org.testng.ITestResult)[pri:0, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:49:26 IST" name="afterClass" finished-at="2022-05-08T22:49:26 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=EnterKNETCardDetailsAndSubmit status=SUCCESS method=SimpleEndToEndTest.EnterKNETCardDetailsAndSubmit()[pri:6, instance:Testcases.SimpleEndToEndTest@771a660] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method signature="VerifyTheOrderOnMyAccount()[pri:7, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:49:26 IST" name="VerifyTheOrderOnMyAccount" finished-at="2022-05-08T22:49:28 IST" depends-on-methods="Testcases.SimpleEndToEndTest.EnterKNETCardDetailsAndSubmit" duration-ms="2774" status="PASS">
+        <test-method signature="VerifyTheOrderOnMyAccount()[pri:7, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-20T14:54:16 IST" name="VerifyTheOrderOnMyAccount" finished-at="2022-05-20T14:54:16 IST" depends-on-methods="Testcases.SimpleEndToEndTest.EnterKNETCardDetailsAndSubmit" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method SimpleEndToEndTest.VerifyTheOrderOnMyAccount()[pri:7, instance:Testcases.SimpleEndToEndTest@771a660] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method SimpleEndToEndTest.VerifyTheOrderOnMyAccount()[pri:7, instance:Testcases.SimpleEndToEndTest@771a660] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyTheOrderOnMyAccount -->
-        <test-method is-config="true" signature="afterClass(org.testng.ITestResult)[pri:0, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:49:28 IST" name="afterClass" finished-at="2022-05-08T22:49:28 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=VerifyTheOrderOnMyAccount status=SUCCESS method=SimpleEndToEndTest.VerifyTheOrderOnMyAccount()[pri:7, instance:Testcases.SimpleEndToEndTest@771a660] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-08T22:49:29 IST" name="tearDown" finished-at="2022-05-08T22:49:29 IST" duration-ms="397" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcases.SimpleEndToEndTest@771a660]" started-at="2022-05-20T14:54:16 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1653038656430" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Testcases.SimpleEndToEndTest -->
-    </test> <!-- End to End Test -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
