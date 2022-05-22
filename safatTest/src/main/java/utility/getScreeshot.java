@@ -37,7 +37,7 @@ public class getScreeshot {
 
 			File sourceFile = sc.getScreenshotAs(OutputType.FILE);
 
-			destinationFilePath = System.getProperty("user.dir") + "/ScreenShot/" + screenShotName + time + ".png";
+			destinationFilePath = System.getProperty("user.dir") + "/ErrorScreenShots/" + screenShotName + time + ".png";
 
 			File DestinationFile = new File(destinationFilePath);
 
